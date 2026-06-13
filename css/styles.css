@@ -10947,7 +10947,7 @@ header.masthead {
   padding-bottom: 6rem;
   text-align: center;
   color: #fff;
-  background-image: url("../assets/img/header-bg.jpg");
+  background-image: none;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -11313,4 +11313,290 @@ section#contact form#contactForm :-ms-input-placeholder {
   text-align: center;
   font-size: 0.9rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+/* Base Plastik corporate theme */
+:root {
+  --bs-primary: #1769aa;
+  --bs-primary-rgb: 23, 105, 170;
+  --bs-link-color: #1769aa;
+  --bs-link-hover-color: #0f4d80;
+  --bs-warning: #1769aa;
+  --bs-warning-rgb: 23, 105, 170;
+}
+
+body {
+  color: #263442;
+}
+
+.text-primary {
+  color: #1769aa !important;
+}
+
+.btn-primary {
+  --bs-btn-bg: #1769aa;
+  --bs-btn-border-color: #1769aa;
+  --bs-btn-hover-bg: #12588f;
+  --bs-btn-hover-border-color: #12588f;
+  --bs-btn-active-bg: #0f4d80;
+  --bs-btn-active-border-color: #0f4d80;
+  --bs-btn-disabled-bg: #1769aa;
+  --bs-btn-disabled-border-color: #1769aa;
+}
+
+#mainNav,
+#mainNav.navbar-shrink {
+  background-color: #142b3f;
+}
+
+#mainNav .navbar-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  color: #fff;
+  text-transform: none;
+}
+
+#mainNav .navbar-brand .brand-mark {
+  display: inline-flex;
+  width: 2.25rem;
+  height: 2.25rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.35rem;
+  color: #1769aa;
+  background: #fff;
+  font-size: 1.35rem;
+  font-weight: 700;
+}
+
+#mainNav .navbar-nav .nav-item .nav-link.active,
+#mainNav .navbar-nav .nav-item .nav-link:hover {
+  color: #7fc1f2;
+}
+
+header.masthead {
+  position: relative;
+  min-height: 42rem;
+  display: flex;
+  align-items: center;
+  background-image:
+    linear-gradient(90deg, rgba(10, 31, 49, 0.96) 0%, rgba(15, 60, 94, 0.82) 48%, rgba(20, 43, 63, 0.2) 100%),
+    url("../assets/img/hero-sourcing.png");
+  background-color: #142b3f;
+  background-position: center;
+}
+
+header.masthead .masthead-subheading {
+  color: #b9d9ee;
+  font-style: normal;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-weight: 600;
+}
+
+header.masthead .masthead-heading {
+  max-width: 58rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+header.masthead .masthead-lead {
+  max-width: 50rem;
+  margin: 0 auto 2.5rem;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 1.1rem;
+}
+
+.page-section h3.section-subheading {
+  font-style: normal;
+}
+
+.service-card,
+.product-card {
+  border: 1px solid #e0e7ed;
+  border-radius: 0.5rem;
+  background: #fff;
+  box-shadow: 0 0.5rem 1.5rem rgba(20, 43, 63, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.service-card {
+  padding: 2rem 1.5rem;
+}
+
+.service-card:hover,
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0.8rem 2rem rgba(20, 43, 63, 0.12);
+}
+
+.product-card {
+  overflow: hidden;
+  text-align: center;
+}
+
+.product-icon {
+  display: flex;
+  min-height: 12rem;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background: linear-gradient(135deg, #1769aa, #4e91c6);
+  font-size: 4rem;
+}
+
+.product-card .portfolio-caption {
+  padding: 1.75rem 1.5rem;
+}
+
+.product-card .portfolio-caption-heading {
+  font-size: 1.2rem;
+}
+
+.product-card .portfolio-caption-subheading {
+  margin: 0.75rem 0 0;
+  font-family: "Roboto Slab", serif;
+  font-size: 0.95rem;
+  font-style: normal;
+}
+
+.corporate-title {
+  margin-bottom: 1.5rem;
+  color: #142b3f;
+}
+
+.corporate-panel {
+  position: relative;
+  overflow: hidden;
+  padding: 2rem;
+  border-left: 4px solid #4e91c6;
+  border-radius: 0 0.5rem 0.5rem 0;
+  color: #fff;
+  background-image:
+    linear-gradient(90deg, rgba(20, 43, 63, 0.96), rgba(20, 43, 63, 0.78)),
+    url("../assets/img/corporate-partnership.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.corporate-point {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.corporate-point + .corporate-point {
+  margin-top: 1.5rem;
+}
+
+.corporate-point > svg {
+  margin-top: 0.2rem;
+  color: #7fc1f2;
+  font-size: 1.35rem;
+}
+
+.corporate-point strong,
+.corporate-point span {
+  display: block;
+}
+
+.corporate-point span {
+  margin-top: 0.25rem;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 0.9rem;
+}
+
+section#iletisim {
+  background-color: #142b3f;
+  background-image: url("../assets/img/map-image.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+section#iletisim .section-heading {
+  color: #fff;
+}
+
+section#iletisim .section-subheading {
+  color: #b9c6d1;
+}
+
+section#iletisim form#contactForm .form-group {
+  margin-bottom: 1.5rem;
+}
+
+section#iletisim form#contactForm .form-group input,
+section#iletisim form#contactForm .form-group textarea {
+  padding: 1.25rem;
+}
+
+section#iletisim form#contactForm .form-group input.form-control {
+  height: auto;
+}
+
+section#iletisim form#contactForm .form-group-textarea {
+  height: 100%;
+}
+
+section#iletisim form#contactForm .form-group-textarea textarea {
+  height: 100%;
+  min-height: 14rem;
+}
+
+section#iletisim form#contactForm .form-control:focus {
+  border-color: #4e91c6;
+  box-shadow: 0 0 0 0.2rem rgba(78, 145, 198, 0.2);
+}
+
+.form-note {
+  color: #b9c6d1;
+  font-size: 0.85rem;
+}
+
+.footer {
+  color: #263442;
+  background: #eef2f5;
+}
+
+.footer-brand {
+  color: #142b3f;
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.footer-contact li {
+  display: flex;
+  gap: 0.5rem;
+  align-items: baseline;
+}
+
+.footer-contact li + li {
+  margin-top: 0.6rem;
+}
+
+.footer-contact svg {
+  width: 1rem;
+  color: #1769aa;
+}
+
+@media (min-width: 992px) {
+  #mainNav {
+    background-color: transparent;
+  }
+}
+
+@media (max-width: 767.98px) {
+  header.masthead {
+    min-height: 38rem;
+  }
+
+  header.masthead .masthead-heading {
+    font-size: 2.6rem;
+    line-height: 1.15;
+  }
+
+  .footer-contact li {
+    justify-content: center;
+  }
 }
