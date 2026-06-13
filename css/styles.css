@@ -11580,6 +11580,15 @@ section#iletisim form#contactForm .form-control:focus {
   color: #1769aa;
 }
 
+.footer-contact a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.footer-contact a:hover {
+  color: #1769aa;
+}
+
 @media (min-width: 992px) {
   #mainNav {
     background-color: transparent;
