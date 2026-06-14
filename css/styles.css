@@ -11466,12 +11466,22 @@ header.masthead .masthead-lead {
 
 .product-icon {
   display: flex;
-  min-height: 12rem;
+  min-height: 10rem;
   align-items: center;
   justify-content: center;
   color: #fff;
   background: linear-gradient(135deg, #1769aa, #4e91c6);
   font-size: 4rem;
+}
+
+.product-code {
+  padding: 0.25rem 1rem;
+  border: 2px solid rgba(255, 255, 255, 0.9);
+  border-radius: 0.35rem;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
 }
 
 .product-card .portfolio-caption {
@@ -11487,6 +11497,24 @@ header.masthead .masthead-lead {
   font-family: "Roboto Slab", serif;
   font-size: 0.95rem;
   font-style: normal;
+}
+
+.product-types {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  justify-content: center;
+  margin-top: 0.9rem;
+}
+
+.product-types span {
+  padding: 0.3rem 0.6rem;
+  border: 1px solid #cbd8e2;
+  border-radius: 0.25rem;
+  color: #31516a;
+  background: #f5f8fa;
+  font-size: 0.78rem;
+  font-weight: 600;
 }
 
 .corporate-title {
