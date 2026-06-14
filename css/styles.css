@@ -11374,6 +11374,36 @@ body {
   color: #7fc1f2;
 }
 
+.navbar-actions {
+  display: flex;
+  gap: 0.65rem;
+  align-items: center;
+  margin-left: 1rem;
+}
+
+.whatsapp-nav-link {
+  display: inline-flex;
+  width: 2.75rem;
+  height: 2.75rem;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: #fff;
+  background-color: #25d366;
+  font-size: 1.55rem;
+  text-decoration: none;
+  box-shadow: 0 0.3rem 0.8rem rgba(0, 0, 0, 0.18);
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.whatsapp-nav-link:hover,
+.whatsapp-nav-link:focus {
+  color: #fff;
+  background-color: #1ebe5d;
+  transform: translateY(-2px);
+}
+
 header.masthead {
   position: relative;
   min-height: 42rem;
@@ -11609,5 +11639,17 @@ section#iletisim form#contactForm .form-control:focus {
 
   .footer-contact li {
     justify-content: center;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .navbar-actions {
+    margin-left: auto;
+  }
+
+  .whatsapp-nav-link {
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.4rem;
   }
 }
